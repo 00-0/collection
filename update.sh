@@ -1,7 +1,7 @@
 #!/bin/sh
 git checkout master
 git pull
-rsync -r --exclude="update.sh" ../../collection .
+rsync -r --exclude="update.sh" ../../collection/* .
 git add -A
 git commit
 git push
